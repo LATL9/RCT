@@ -12,7 +12,7 @@ endif
 
 CFLAGS:= -pedantic -Wall -Wextra -Wno-missing-field-initializers -std=c++17 -I include -I raylib/include
 ifeq ($(OS),LIN)
-    CFLAGS+= -I /usr/include/opencv4 -DOS_LIN
+    CFLAGS+= -I /usr/local/include/opencv4 -DOS_LIN
 	DBGBINDIR:=bin/linux/debug
     RELBINDIR:=bin/linux/release
 	DBGOBJDIR:=obj/linux/debug
